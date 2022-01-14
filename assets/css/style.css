@@ -1,0 +1,112 @@
+
+@font-face{
+  font-family: "Pmarker";
+  src: url(../fonts/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'play';
+  src: url(../fonts/LL_RECOR.TTF);
+}
+@font-face {
+  font-family: 'SplineSans-Medium';
+  src: url(../fonts/Spline_Sans/static/SplineSans-Medium.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url(../img/bg_wallpaper.jpg) ;
+}
+
+h1 {
+  
+  font-family: 'pmarker', serif;
+  color: #fff;
+  text-shadow: 0 0 8px #000;
+  top:0px;
+  position:fixed;
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 2rem;
+  z-index: 10;
+}
+
+header img{
+  width: 100%;
+  margin: 0;
+}
+
+NAV {
+  background-color: #000;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #fff; 
+  text-align: right;
+  position: sticky;
+  top: 0px;
+  display: block;
+  color: #fff;
+  font-family: 'SplineSans-Medium';
+  font-size: 1rem;
+}
+
+NAV UL {
+  margin: -6px auto 0 auto;
+  padding-top: 30px;
+  width: 80%;
+}
+
+ NAV LI {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;     
+ 
+}
+
+NAV LI A { 
+    color: #fff; 
+    text-decoration: none;
+    margin: 0;
+    
+}
+
+NAV LI A::before{
+font-family: "play";
+font-size: 1.5rem; 
+content: "C";
+opacity: 0;   
+padding-right: 4px;
+padding-top:2px;         
+}
+
+NAV LI A:hover { 
+  transition: all .5s linear;
+  color: #fff;
+  text-shadow: 0px 0px 4px yellowgreen;
+}
+NAV LI A:hover::before{
+font-family: "play";
+font-size: 1.5rem; 
+content: "C";
+color: #fff;    
+opacity: 1;        
+text-shadow: 0px 0px 4px yellowgreen;
+padding-right: 4px;
+padding-top:2px;   
+}
+
+.big{
+height: 3900px;
+
+}
+
+.sticky{
+background-color: #f0f;
+position: sticky;
+top:50px;
+z-index: 20;
+
+}
