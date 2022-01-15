@@ -23,8 +23,8 @@ body{
 }
 
 h1 {
-  
   font-family: 'pmarker', serif;
+  line-height: 65%;
   color: #fff;
   text-shadow: 0 0 8px #000;
   top:0px;
