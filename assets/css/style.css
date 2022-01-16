@@ -12,6 +12,14 @@
   font-family: 'SplineSans-Medium';
   src: url(../fonts/Spline_Sans/static/SplineSans-Medium.ttf);
 }
+@font-face {
+  font-family: 'BeVietnamPro-Bold';
+  src: url(../fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf);
+}
+@font-face {
+  font-family: 'BeVietnamPro-Light';
+  src: url(../fonts/Be_Vietnam_Pro/BeVietnamPro-Light.ttf);
+}
 
 *{
   margin: 0;
@@ -32,6 +40,7 @@ h1 {
   width: 100%;
   padding: 0.5rem 0 0.5rem 2rem;
   z-index: 10;
+  transition: all .5s linear;
 }
 
 header img{
@@ -98,15 +107,74 @@ padding-right: 4px;
 padding-top:2px;   
 }
 
+.content {
+  width: 80%;
+}
+
+h2{
+  font-family: 'BeVietnamPro-Bold';
+  font-size: 2.5rem;
+  color: #222;
+  text-align: center;
+  padding: 1 rem 0.5rem;
+}
+h3{
+  font-family: 'BeVietnamPro-Light';
+  font-size: 2rem;
+  color: #222;
+  text-align: center;
+  padding: 0 20% 1.5rem 20%;
+  margin-bottom: 0.5rem;
+}
+
+section {
+  background: #efefef ;
+  width: 85%;
+  margin: 2rem auto;
+  border: 2px solid #666;
+  border-radius: 12px;
+  padding: 2rem 0 2rem 0;
+}
+
+.angebot-reihe{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.angebot{
+  display: inline;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.angebot img{
+width: 30%;
+padding: 1rem;
+}
+
+.angebot img:hover {
+    box-shadow: 0 0 6px #999;
+    background: #fff;
+    }
+
+  
 .big{
-height: 3900px;
+height: 1000px;
 
 }
 
-.sticky{
-background-color: #f0f;
-position: sticky;
-top:50px;
-z-index: 20;
+
+
+footer{
+  background: #fff ;
+  opacity: 0.9;
+  width: 100%;
+  border-top: 2px solid #666;
+}
+footer div{
+font-size: 6rem;
+color: aqua;
 
 }
