@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Die Plattenkiste :: Willkommen</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="#">Die Plattenkiste</a></h1>
+        <img src="assets/img/home.jpeg" alt="Meine Plattensammlung">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html#home">HOME</a></li>
+            <li><a href="index.html#new">BRANDNEU!</a></li>
+            <li><a href="empfehlungen.html#empfehlungen">EMPFEHLUNGEN</a></li>
+            <li><a href="ankauf.html#ankauf">ANKAUF</a></li>
+            <li><a href="wohnzimmer.html#wohnzimmer">WOHNZIMMER</a></li>
+            <li><a href="kontakt.html#kontakt">KONTAKT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <div id="home" class="sprunganker"></div>
+                <h2>WILLKOMMEN</h2>
+
+                <p>You don't believe in the Force, do you? I'm surprised you had the courage to take the responsibility
+                    yourself. Hey, Luke! May the Force be with you. Don't be too proud of this technological terror
+                    you've constructed. The ability to destroy a planet is insignificant next to the power of the Force.
+                </p>
+                <p>
+                    The more you tighten your grip, Tarkin, the more star systems will slip through your fingers. No!
+                    Alderaan is peaceful. We have no weapons. You can't possibly… Dantooine. They're on Dantooine. What
+                    good is a reward if you ain't around to use it? Besides, attacking that battle station ain't my idea
+                    of courage. It's more like…suicide.
+                </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="footeraddress">
+            <h4>Die Plattenkiste</h4>
+            <p>c/o Guido Bursch</p>
+            <p>Bakerstreet 19</p>
+            <p>4711 Rock City</p>
+            <p><i class="fas fa-phone-square-alt"></i> <a href="tel: 5550815666">555 - 08 15 666</a></p>
+        </div>
+        <div class="footeropen">
+            <h4>Unsere Öffnungszeiten:</h4>
+            <p>Sa: 10.oo - 16:oo Uhr</p>
+            <p>und nach Absprache</p>
+        </div>
+        <div class="footermenu">
+            <ul>
+                <li><a href="#home">Top</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Impressum</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <!-- ################# -->
+    <!-- #  JavaScripte  # -->
+    <!-- ################# -->
+
+    <script src="https://kit.fontawesome.com/8c93758a75.js" crossorigin="anonymous"></script>
+
+    <script>
+        // When the user scrolls down 250px from the top of the document, resize the header's font size
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("header").style.fontSize = "1.5rem";
+            } else {
+                document.getElementById("header").style.fontSize = "6rem";
+            }
+        }
+    </script>
+</body>
+
+</html>
