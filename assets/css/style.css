@@ -32,7 +32,7 @@ body{
   background: url(../img/bg_wallpaper.jpg) ;
 }
 #header {
-  z-index: 1000;
+  z-index: 100;
 }
 h1 {
   font-family: 'pmarker', serif;
@@ -53,7 +53,7 @@ h1 a{
 h2{
   font-family: 'BeVietnamPro-Bold';
   font-size: 2.5rem;
-  color: #222;
+  color: #333;
   text-align: center;
   padding: 1rem 0.5rem;
 }
@@ -97,17 +97,28 @@ NAV {
 }
 
 NAV UL {
-  margin: -6px auto 0 auto;
+  margin: -6px auto 0 180px;
   padding-top: 30px;
   width: 80%;
 }
 NAV LI {
   display: inline;
-  list-style-type: none;
-  padding-right: 20px;     
-}
-NAV LI A { 
   color: #efefef; 
+  list-style-type: none;
+  padding-right: 20px;
+  padding-left: 10px;   
+  margin: 0 4px; 
+}
+.active{
+ color: #000;
+ background-color: #fff;
+ padding-left: 20px;
+ padding: 2px 20px 2px 20px;
+ border-radius: 2px;
+}
+
+NAV LI A { 
+  color: #ccc; 
   text-decoration: none;
   margin: 0;
 }
@@ -157,12 +168,21 @@ section p {
   color: #222;
   padding: 1rem 1rem;
 }
-
+section p a{
+  color: teal;
+}
 section p a:hover{
   text-decoration: underline;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+/* ------ home ------ */
 article.home P{
-  width:80%;
+  width:70%;
   color: #333;
   text-align:justify;
   line-height: 1.5rem;
@@ -170,7 +190,7 @@ article.home P{
   margin: 0 auto;
 }
 article.home H5 {
-  width:80%;
+  width:70%;
   color:darkolivegreen;
   background: #dedede;
   text-align:justify;
@@ -188,7 +208,7 @@ article.home div ul li {
 } 
 
 /*  BRANDNEU und EMPFEHLUNGEN  */
- .empfehlungen, .empfehlungenklein{
+.empfehlungenklein{
   display: flexbox;
   text-align: center;
   margin: 0 auto;
@@ -196,15 +216,21 @@ article.home div ul li {
 
 .angebot{
   display: inline;
+  width: 340px;
   text-align: center;
-  margin: 0 auto;
+  padding: 1rem;
+  margin: 01rem auto;
 }
-.brandneu {
+.angebot img{
+  width: 340px;
+}
+.brandneu, .empfehlungen{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 80%;
-  margin: 0 25% 0 10%;
-  gap: 4rem;
+  width: 94%;
+  margin: 0 auto;
+  gap: 2rem;
+  
 }
 .wrapper img{
   /* width: 340px; */
@@ -224,9 +250,10 @@ article.home div ul li {
 .wrapper-content {
   width: 340px;
   height: 340px;
-  font-family: "Pmarker";
+  font-family: 'BeVietnamPro-Light';
   font-size: 1rem;
-  text-shadow: 1px 1px 4px black;
+  text-align: center;
+  text-shadow: 0px 0px 2px #000;
   background: rgba(0, 0, 0, 0.25);
   color: #fff;
   display: grid;
@@ -235,6 +262,19 @@ article.home div ul li {
   top: 100%;
   transition: all 0.5s;
   z-index: 1;
+}
+.wrapper-text {
+  font-family: 'BeVietnamPro-Light';
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: #fff;
+  margin: 0;
+}
+.wrapper-content span{
+  font-family: 'BeVietnamPro-Light';
+  font-size: 1.0rem;
+  color: #fff;
+  margin: 0;
 }
 
 .wrapper:hover > .wrapper-content {
@@ -326,10 +366,13 @@ A .fa-instagram-square {
 A .fa-facebook-square:hover {
   font-size: 2rem;
   color: #1877F2;
-  
 }
 A .fa-instagram-square:hover {
   font-size: 2rem;
   color: #E4405F;
-  
+}
+
+.impressum{
+  width: 70%;
+  margin: 0 auto;
 }
